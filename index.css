@@ -269,7 +269,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
 
-  width: 45rem;
+  max-width: 45rem;
+  width: 90%;
   font-size: 1.6rem;
   font-weight: 800;
 
