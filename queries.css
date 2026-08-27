@@ -14,7 +14,7 @@
 @media (max-width: 754px) {
   .notes-grid {
     grid-template-columns: 1fr 1fr;
-    max-height: 78rem;
+    max-height: 60dvh;
     overflow: scroll;
   }
 
@@ -37,7 +37,7 @@
   }
 
   .notes-grid {
-    max-height: 95rem;
+    max-height: 60dvh;
   }
   .search-field {
     font-size: 14px;
@@ -53,7 +53,7 @@
 @media (max-width: 422px) {
   .notes-grid {
     grid-template-columns: 1fr;
-    max-height: 70rem;
+    max-height: 70dvh;
   }
 
   .note {
@@ -61,7 +61,8 @@
   }
 
   .note-info {
-    transform: translateY(-1rem);
+    transform: translateY(-1.5rem);
+    font-size: 1.6rem;
   }
 
   .drop-down,
