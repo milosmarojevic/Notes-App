@@ -110,10 +110,10 @@ const renderNote = function () {
 
 const openPopUp = function (e) {
   let htmlPopUp;
-  if (e.target.classList.contains(".note-grid")) {
+  if (e.target.classList.contains("note-grid")) {
     return;
   }
-  if (e.target.classList.contains("add-btn")) {
+  if (e.target.closest(".add-btn")) {
     htmlPopUp = `
     <div class="pop-up-top">
         <p class="pop-up-title">New Note</p>
