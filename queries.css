@@ -1,0 +1,77 @@
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 754px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 754px) {
+  .notes-grid {
+    grid-template-columns: 1fr 1fr;
+    max-height: 78rem;
+    overflow: scroll;
+  }
+
+  .note-info {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .main-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .container {
+    gap: 2rem;
+  }
+
+  .notes-grid {
+    max-height: 95rem;
+  }
+  .search-field {
+    font-size: 14px;
+    width: 85%;
+  }
+  .drop-down,
+  .add-btn {
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+}
+
+@media (max-width: 422px) {
+  .notes-grid {
+    grid-template-columns: 1fr;
+    max-height: 70rem;
+  }
+
+  .note {
+    height: 17rem;
+  }
+
+  .note-info {
+    transform: translateY(-1rem);
+  }
+
+  .drop-down,
+  .add-btn {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .pop-up {
+    width: 85%;
+  }
+}

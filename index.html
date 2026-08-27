@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milos|Notes App</title>
+    <link href="index.css" rel="stylesheet" />
+    <link href="queries.css" rel="stylesheet" />
+    <script type="module" src="index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-section">
+        <h2 class="main-title">Elegant Notes</h2>
+        <p class="main-subtitle">Store your thoughts and ideas in style</p>
+      </div>
+      <div class="notes-form" action="" method="">
+        <input
+          class="input-field search-field"
+          name="task-search"
+          placeholder="Search notes..." />
+        <select class="drop-down" name="drop-down">
+          <option value="All Notes" selected>All Notes</option>
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="ideas">Ideas</option>
+          <option value="reminders">Reminders</option>
+        </select>
+        <button class="add-btn btn">+ Add</button>
+      </div>
+      <div class="notes-grid">
+        <!-- <div class="note">
+          <p class="note-title">New</p>
+          <p class="note-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            voluptatibus porro omnis accusantium est facilis asperiores. Nobis
+            quod enim blanditiis cupiditate obcaecati, ut a accusamus omnis
+            aperiam porro quasi perspiciatis?
+          </p>
+          <div class="note-info">
+            <div class="note-type">
+              <ion-icon
+                name="notifications-outline"
+                class="icon-info"></ion-icon>
+              <p class="note-type-text">Reminders</p>
+            </div>
+            <p class="note-date">24.08.2025,12:00</p>
+          </div>
+          <ion-icon name="trash-outline" class="icon-delete"></ion-icon>
+        </div> -->
+
+        <div class="no-notes-container">
+          <ion-icon name="duplicate-outline" class="icon-add"></ion-icon>
+          <p class="no-notes-status">No notes yet</p>
+          <p class="no-notes-message">
+            Add your first note by clicking the "Add" button
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div class="pop-up hidden">
+      <!-- <div class="pop-up-top">
+        <p class="pop-up-title">New Note</p>
+        <ion-icon name="close-outline" class="icon-close"></ion-icon>
+      </div> -->
+      <!-- FORM -->
+      <!--  <form class="pop-up-main">
+        <div class="title-group">
+          <label for="title-field" class="label-pop-up">Title</label>
+          <input
+            required
+            type="text"
+            name="title-field"
+            class="input-field input-title" />
+        </div>
+        <div class="content-group">
+          <label for="title-field" class="label-pop-up">Content</label>
+          <textarea
+            required
+            name="textarea-field"
+            class="input-field input-content"></textarea>
+        </div>
+        <div class="tags-group">
+          <label class="label-pop-up">Tags</label>
+          <div class="tags">
+            <div class="note-type work tag" data-type="work">
+              <ion-icon name="briefcase-outline" class="icon-info"></ion-icon>
+              <p class="note-type-text">Work</p>
+            </div>
+            <div class="note-type personal tag" data-type="personal">
+              <ion-icon name="person-outline" class="icon-info"></ion-icon>
+              <p class="note-type-text">Personal</p>
+            </div>
+            <div class="note-type ideas tag" data-type="ideas">
+              <ion-icon name="bulb-outline" class="icon-info"></ion-icon>
+              <p class="note-type-text">Ideas</p>
+            </div>
+            <div class="note-type reminders tag" data-type="reminders">
+              <ion-icon
+                name="notifications-outline"
+                class="icon-info"></ion-icon>
+              <p class="note-type-text">Reminders</p>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="add-note-btn btn">Save Note</button>
+      </form> -->
+
+      <!-- NOTE -->
+      <!-- <div class="pop-up-content-box">
+        <label class="label-pop-up">Content</label>
+        <p class="text-pop-up">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
+          consequatur reiciendis optio, ratione itaque ipsa fugiat accusamus
+          obcaecati officia aspernatur rerum amet voluptates a? Molestias magnam
+          culpa temporibus praesentium sunt. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. At sunt quas quia, harum sequi
+          praesentium, eius dolorum voluptatem dolorem culpa impedit cumque
+          nesciunt rem veritatis ut commodi minima temporibus. Praesentium?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque
+          voluptas voluptate ipsum porro esse explicabo. Delectus quod
+          doloremque sit, enim, nobis esse consequatur odit eum similique harum
+          cumque excepturi? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ullam, soluta quasi. Alias perferendis natus, deserunt eos nemo,
+          vero quam ullam soluta ducimus sint tempora amet saepe nesciunt vel
+          tempore hic!
+        </p>
+      </div>
+      <div class="note-popup-info">
+         <div class="note-type reminders">
+              <ion-icon
+                name="notifications-outline"
+                class="icon-info"></ion-icon>
+              <p class="note-type-text">Reminders</p>
+            </div>
+            <p class="note-date">24.08.2025,12:00</p>
+          </div>
+      </div> -->
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

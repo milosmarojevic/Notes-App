@@ -1,0 +1,27 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "App which lets users keep notes of various types.",
+  "homepage": "https://github.com/milosmarojevic/Notes-App#readme",
+  "bugs": {
+    "url": "https://github.com/milosmarojevic/Notes-App/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milosmarojevic/Notes-App.git"
+  },
+  "license": "ISC",
+  "author": "Milos Marojevic",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "core-js": "^3.50.0",
+    "regenerator-runtime": "^0.14.1"
+  }
+}
