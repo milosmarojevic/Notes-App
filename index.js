@@ -113,7 +113,7 @@ const openPopUp = function (e) {
   if (e.target.classList.contains("note-grid")) {
     return;
   }
-  if (e.target.closest(".add-btn")) {
+  if (e.currentTarget === addBtn) {
     htmlPopUp = `
     <div class="pop-up-top">
         <p class="pop-up-title">New Note</p>
